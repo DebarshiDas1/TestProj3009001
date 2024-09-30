@@ -1,5 +1,5 @@
 - dataType: section
-  label: Patient details
+  label: Patient detail
   showTitle: true
   column: 12
   fields:
@@ -7,27 +7,69 @@
       label: Title
       dataType: guid
       entityName: Title
-      column: 2
-    - fieldName: Name
-      label: Name
+      column: 3
+      required: true
+      readOnly: false
+      hint: null
+      defaultValue: null
+      type: dropdownlist
+      lookupView: null
+      operatorForSearch: contains
+      filterable: true
+      showDefaultValue: true
+      isValuePrimitive: true
+      showHorizontal: false
+      valueField: id
+      textField: name
+    - fieldName: FirstName
+      label: First name
       dataType: string
-      column: 10
+      required: true
+      column: 4
+    - fieldName: LastName
+      label: Last name
+      dataType: string
+      column: 5
     - fieldName: Gender
       label: Gender
       dataType: guid
       required: true
       entityName: Gender
+      column: 4
+    - fieldName: BloodGroup
+      label: Blood group
+      dataType: string
       column: 6
+    - fieldName: Prescription
+      label: Prescription
+      dataType: file
+      removeUrl: BASEURL/api/file
+      saveUrl: BASEURL/api/file/Patient/field/Prescription
+      column: 12
+- dataType: section
+  label: Other detail
+  showTitle: true
+  column: 12
+  fields:
     - fieldName: Dob
       label: Dob
       dataType: datetime
       required: true
       column: 6
-    - fieldName: Mobile
-      label: Mobile
-      dataType: string
+    - fieldName: Age
+      label: Age
+      dataType: numeric
       column: 6
-    - fieldName: Email
-      label: Email
+      required: true
+      readOnly: false
+      hint: null
+      defaultValue: null
+      scale: null
+      min: null
+      max: null
+      isSpinnersRequired: true
+      showNumericFormat: false
+    - fieldName: AlternateMobile
+      label: Alternate mobile
       dataType: string
       column: 6

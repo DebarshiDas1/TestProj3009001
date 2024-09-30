@@ -101,7 +101,6 @@ builder.Services.AddScoped<ITenantService, TenantService>();
 builder.Services.AddScoped<IEntityService, EntityService>();
 builder.Services.AddScoped<IRoleEntitlementService, RoleEntitlementService>();
 builder.Services.AddScoped<IUserInRoleService, UserInRoleService>();
-builder.Services.AddScoped<IFileService, FileService>();
 builder.Services.AddScoped<IUserAuthenticationService, UserAuthenticationService>();
 builder.Services.AddScoped<IFieldMapperService, FieldMapperService>();
 builder.Services.AddScoped<IJsonMessageService, JsonMessageService>();

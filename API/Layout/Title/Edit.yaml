@@ -1,9 +1,4 @@
-- dataType: section
-  label: Title details
-  showTitle: true
+- fieldName: Name
+  label: Name
+  dataType: string
   column: 12
-  fields:
-    - fieldName: Name
-      label: Name
-      dataType: string
-      column: 12
