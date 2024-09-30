@@ -1,0 +1,33 @@
+- dataType: section
+  label: Patient details
+  showTitle: true
+  column: 12
+  fields:
+    - fieldName: Title
+      label: Title
+      dataType: guid
+      entityName: Title
+      column: 2
+    - fieldName: Name
+      label: Name
+      dataType: string
+      column: 10
+    - fieldName: Gender
+      label: Gender
+      dataType: guid
+      required: true
+      entityName: Gender
+      column: 6
+    - fieldName: Dob
+      label: Dob
+      dataType: datetime
+      required: true
+      column: 6
+    - fieldName: Mobile
+      label: Mobile
+      dataType: string
+      column: 6
+    - fieldName: Email
+      label: Email
+      dataType: string
+      column: 6
